@@ -13,3 +13,4 @@ chmod +x ric_config.sh
 
 ./ric_config.sh
 
+Do not forget to change the miner-worker to your own in config file !!!
