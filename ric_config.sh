@@ -15,7 +15,7 @@ echo '
 #!/bin/sh
 
 miner_path="/home/user/RIC"
-miner_name="rieMiner0.92dUbu18Avx2"
+miner_name="rieMiner0.93AVX2Ubu18"
 cofing_file="suprnova.cc.config"
 marker=`ps -e | grep rieMiner`
 
@@ -23,7 +23,7 @@ if [ -z "$marker" ];
   then
     screen -Smd RIC $miner_path/$miner_name $miner_path/$cofing_file;
   else
-    killall $miner_name && screen -Smd RIC $miner_path/$miner_name $cofing_file;
+    killall $miner_name && screen -Smd RIC $miner_path/$miner_name $miner_path/$cofing_file;
 fi
 ' > start.sh
 
